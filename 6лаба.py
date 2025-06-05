@@ -1,6 +1,6 @@
 import math
 import timeit
-import pandas as pd
+from pandas import DataFrame
 import matplotlib.pyplot as plt
 
 # Рекурсивная функция F
@@ -39,7 +39,7 @@ if __name__ == '__main__':
         results.append((n, t_rec, t_it))
 
     # таблица
-    df = pd.DataFrame(results, columns=['n', 'Recursive Time (s)', 'Iterative Time (s)'])
+    df = DataFrame(results, columns=['n', 'Recursive Time (s)', 'Iterative Time (s)'])
     print(df.to_string(index=False))
 
     # график
