@@ -8,8 +8,8 @@ def generate_chair_deputy_combinations():
     for chair, deputy in all_pairs:
         print(f"Председатель: {chair}, Заместитель: {deputy}")
     total = K * (K - 1)
+    end = time.time()
     print(f"\nВсего вариантов: {total}")
+    print(f"Время выполнения: {end - start:.5f} секунд")
 start = time.time()
 generate_chair_deputy_combinations()
-end = time.time()
-print(f"Время выполнения: {end - start:.5f} секунд")
