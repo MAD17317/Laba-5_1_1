@@ -1,3 +1,4 @@
+#F(0) = F(1) = 3; F(n) =(-1)n*(3-F(n-1) /(2n)!-(n-2)) (при n >23), F(n)=(n-2) * F(n-1) (при 1<n<=23)
 import math
 import timeit
 from pandas import DataFrame
